@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:include="applicationTemplate::head">
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+<h1>EMPLOYEE REGISTRATION FORM</h1>
+<form th:action="@{/submit}" method="post" th:object="${employee}">
+    NAME:<input type="text" name="name" th:field="*{name}"/><br>
+    EMAIL: <input type="email" name="email" th:field="*{email}"/><br>
+    PASSWORD: <input type="password" name="password" th:field="*{password}"/><br>
+    <input type="submit" value="submit"/><br>
+</form>
+<div th:include="applicationTemplate::footer"></div>
+</body>
+</html>
