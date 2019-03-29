@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script th:src="@{'js/application.js'}"></script>
+</head>
+<body>
+    <input type="button" id="button1" value="submit"/>
+    <br>
+        <span>hello</span>
+    <br>
+    <h4 th:text="${name}"/>
+</body>
+</html>
